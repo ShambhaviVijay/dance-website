@@ -1,0 +1,37 @@
+extends base.pug
+block style
+        style
+                include ../static/register.css
+block content 
+        nav.navbar
+                li #[a(href='/') HOME]
+                li #[a(href='/') ABOUT]
+                li #[a(href='/') GALLERY]
+                li #[a(href='/') REGISTER]
+        section.container
+                <form action="http://localhost:8900/register" class="form" method="POST">
+                        <label for="name" class="pp">NAME</label> 
+                        <input type="text" for="name" class="unit" name="name">
+
+                        <label for="AGE" class="pp">AGE</label> 
+                        <input type="text" for="AGE" class="unit" name="age">
+
+                        <label for="contact" class="pp">CONTACT</label> 
+                        <input type="text" for="contact" class="unit" name="contact">
+
+                        <label for="ADDRESS" class="pp">ADDRESS</label> 
+                        <input type="text" for="ADDRESS" class="unit" name="address">
+
+                        <label for="E-MAIL" class="pp">E-MAIL</label> 
+                        <input type="text" for="E-MAIL" class="unit" name="email">
+
+                        <button class="btn" type="submit">SUBMIT</button>
+
+                </form>
+                        
+
+        footer
+                ul
+
+                        li For more detail contact : 0122-0122 , 0988-0956.
+                        li Mail : danceweeb777@redcliffmail.com.
